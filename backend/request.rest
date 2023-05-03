@@ -1,0 +1,29 @@
+GET http://localhost:3200/products
+
+###
+GET http://localhost:3200/products/1
+
+###
+POST http://localhost:3200/products
+Content-Type: application/json
+
+{
+    "nama_produk": "Tas Carrier Murah",
+    "keterangan": "Carrier 80L",
+    "harga": 1500000,
+    "jumlah": 25
+}
+
+###
+PUT http://localhost:3200/products/2
+Content-Type: application/json
+
+{
+    "nama_produk": "Tas Carrier Samosir",
+    "keterangan": "Carrier 90L",
+    "harga": 2500000,
+    "jumlah": 15
+}
+
+###
+DELETE http://localhost:3200/products/2
